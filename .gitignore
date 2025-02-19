@@ -1,0 +1,5 @@
+/odoo/*
+/.venv/
+.idea
+.DS_Store
+.odoo 
