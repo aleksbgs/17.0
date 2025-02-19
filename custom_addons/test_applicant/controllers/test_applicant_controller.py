@@ -42,10 +42,6 @@ def auth_api_key(api_key):
     user_id = request.env['res.users'].sudo().search([('api_key', '=', api_key)])
     if api_key is not None and user_id:
         response = True
-    elif not user_id:
-        response = ('<html><body><h2>Invalid <i>API Key</i> '
-                    '!</h2></body></html>')
     else:
-        response = ("<html><body><h2>No <i>API Key</i> Provided "
-                    "!</h2></body></html>")
+        response = False
     return response
