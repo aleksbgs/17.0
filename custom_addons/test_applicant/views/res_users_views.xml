@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_users_tree_inherit" model="ir.ui.view">
+        <field name="name">res.users.tree.inherit.login.as</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <button name="action_login_as"
+                        string="Login As"
+                        type="object"
+                        class="oe_highlight"
+                        groups="base.group_system"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="login_as_user_action" model="ir.actions.client">
+        <field name="name">Login As User</field>
+        <field name="tag">login_as_user</field>
+    </record>
+</odoo>
+
+
+
