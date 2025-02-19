@@ -1,5 +1,3 @@
-# test_applicant/tests/test_api.py
-
 from odoo.tests import HttpCase, tagged
 from odoo.addons.test_applicant.controllers import test_applicant_controller
 
