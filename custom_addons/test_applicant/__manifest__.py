@@ -5,7 +5,7 @@
     "version": "0.1",
     "category": "Test",
     "summary": "Test Applicant",
-    'depends': ['base'],
+    'depends': ['base','web'],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
